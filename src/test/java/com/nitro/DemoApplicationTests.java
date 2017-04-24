@@ -22,7 +22,6 @@ public class DemoApplicationTests {
 	public void testMethodSort() {
 		List<String>testCollect= Arrays.asList("999999999","88888888","7777777","666666","aaaaaaaaaa","aaaaaaaaa","aaaaaaaa"
 		,"aaaaaaa","aaaaaa");
-		  stringToSortList.collect(s);
 		assertEquals(testCollect,stringToSortList.collect(s));
 
 	}
