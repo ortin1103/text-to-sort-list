@@ -11,7 +11,6 @@ buildscript {
 }
 
 apply plugin: 'java'
-apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 
 version = '0.0.1-SNAPSHOT'
@@ -24,5 +23,9 @@ repositories {
 
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter')
+	compile 'org.codehaus.groovy:groovy'
+
+	// https://mvnrepository.com/artifact/org.spockframework/spock-core
+	testCompile group: 'org.spockframework', name: 'spock-core', version: '1.1-groovy-2.4-rc-4'
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
